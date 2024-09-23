@@ -1,0 +1,1115 @@
+/** Fonts **/
+h1 { 
+    font-size: 64px;
+    margin-bottom: 20px;
+    opacity: 1; /* Ensure text is visible */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    font-family: "poppins", san-serif; 
+}
+
+.custom-class h2 {
+    font-size: 48px;
+}
+
+h3 {
+    color: #F1EDED;
+    size: 36px;
+    font-family: "poppins", san-serif; }
+
+p2 {
+    color: #1E2534;
+    size: 18px;
+    font-family: "poppins", san-serif; 
+}
+
+p {
+    color: #F1EDED;
+    size: 18px;
+    font-family: "poppins", san-serif; 
+    display: block; /* Ensure each p2 element is on a new line */
+}
+
+/* General */
+body {
+    background: #F1EDED;
+    animation: background-color 20s;
+    min-height: 90vh;
+    min-width: 90vw;
+    max-width: 100vw;
+    color: #F1EDED;
+    line-height: 1.6;
+    font-family: "poppins", san-serif; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+.section-title {
+    padding: 0px;
+    text-align: left;
+    margin: 50px;
+}
+
+
+/* Button Styles */
+.button-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F1EDED;
+    background-color: #1E2534;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.underline {
+    color: #F1EDED;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+.footer_section {
+    background-color: #1E2534;
+    padding: 20px 0; /* Keep padding */
+}
+
+.wrap-text {
+    word-wrap: break-word; /* Older syntax */
+    overflow-wrap: break-word; /* Recommended modern syntax */
+}
+
+.footer_section .container {
+    max-width: 1140px; /* Set a max-width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Side padding */
+}
+
+.footer_section p {
+    margin: 0;
+    padding: 10px; /* Reduced padding for mobile */
+    color: #F1EDED;
+    text-align: center;
+    border-top: 0.8px solid #F1EDED;
+    word-wrap: break-word; /* Ensure long words break and wrap */
+    overflow-wrap: break-word; /* Recommended modern syntax */
+}
+
+.footer_section a {
+    color: inherit;
+}
+
+.footer-text {
+    text-align: center;
+    color: #F1EDED;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    .footer_section .container {
+        text-align: center; /* Center the text in the container */
+        padding: 0; /* Remove padding for container */
+    }
+
+    .footer_section p {
+        padding: 15px; /* Adjust padding for mobile */
+        font-size: 0.8rem; /* Optional: Adjust font size */
+        margin: 0; /* Ensure no margin */
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Navigation Menu **/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ensure consistent padding */
+    background-color: #1E2534;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    color: #F1EDED;
+}
+
+.brand-name {
+    color: #F1EDED;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 20px; /* Space between brand name and contact info */
+}
+.contact-info {
+    font-size: 0.9rem;
+    color: #F1EDED;
+}
+
+.contact-info p2 {
+    display: block; /* Ensure each p2 element is on a new line */
+    margin: 0; /* Adjust margin as needed */
+    color: #F1EDED; /* Adjust text color */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu .nav-link {
+    text-decoration: none;
+    color: #F1EDED;
+    line-height: 1.6; /* Ensure consistent line-height */
+    padding: 8px 12px; /* Add padding for better click area */
+    border-radius: 4px; /* Rounded corners for hover effect */
+    transition: color 0.3s, background-color 0.3s, border-bottom 0.3s; /* Smooth transition */
+}
+
+.navbar-menu .nav-link:hover {
+    color: #CAE1FE; /* Change text color on hover */
+    background-color: rgba(202, 225, 254, 0.2); /* Light background color on hover */
+    border-bottom: 2px solid #CAE1FE; /* Underline effect */
+}
+
+.navbar-menu .nav-link.active {
+    color: #CAE1FE;
+    border-bottom: 2px solid #CAE1FE; /* Persistent underline for active link */
+}
+
+/* Hide dropdown-menu on screens larger than 768px */
+@media (min-width: 769px) {
+    .dropdown-menu {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('../images/teamAutoHorizontal.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F1EDED;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 37, 52, 0.6); /* Darker overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    opacity: 1; /* Ensure text is visible */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.2rem; /* Adjust as needed */
+    line-height: 1.6;
+    max-width: 60%; /* Ensures the paragraph is no wider than the heading */
+    margin: 0 auto;
+}
+
+/* Down Arrow Icon */
+.scroll-down {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #F1EDED;
+    cursor: pointer;
+    z-index: 2;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down i {
+    display: block;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Services Section */
+.OurServices, #OurServices {
+    background-color: #1E2534;
+    color: #fff;
+    padding: 50px 5%;
+}
+
+.OurServices h2 {
+    color: #F1EDED!important;
+}
+
+.OurProcess h2 {
+    color:#F1EDED;
+}
+
+.OurProcess {
+    padding: 50px 5%;
+    background-color: #1E2534;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .steps.row {
+        justify-content: center; /* Center buttons on mobile */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 10px; /* Smaller gap between buttons */
+    }
+
+    #step1, #step2, #step3, #step4, #step5 {
+        width: 50px; /* Smaller width for mobile */
+        height: 50px; /* Smaller height for mobile */
+        font-size: 12px; /* Smaller text size */
+        padding: 5px; /* Adjust padding as needed */
+    }
+
+    #step1 span, #step2 span, #step3 span, #step4 span, #step5 span {
+        display: none; /* Hide text on mobile */
+    }
+
+    #step1 i, #step2 i, #step3 i, #step4 i, #step5 i {
+        font-size: 24px; /* Adjust icon size for mobile */
+    }
+}
+
+
+/* Card Styles */
+/* General card container styling for Our Services */
+.card1-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping on small screens */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px; /* Adds space between the cards */
+    padding: 20px;
+    scroll-snap-type: x mandatory; /* Optional: Enables scroll snapping for a smoother experience */
+}
+
+/* Individual card styling */
+/* Icon styling for larger size */
+.card1-icon i {
+    font-size: 3rem; /* Adjust this value for larger icons */
+    color: #495F7F; /* You can also adjust the color if needed */
+    padding: 5%;
+}
+
+.card1 {
+    flex: 0 0 90%; /* Each card takes 90% of the container width in mobile */
+    background-color: #CAE1FE;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card1 p, h3 { 
+    color: #1E2534;
+}
+
+/* Scrollbar styling (optional) */
+.card1-container::-webkit-scrollbar {
+    height: 8px; /* Sets scrollbar height */
+}
+
+.card1-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar color */
+    border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+    .card1 {
+        flex: 0 0 100%; /* Wider cards in mobile view, adjust as needed */
+    }
+}
+
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .card1-container {
+        overflow-x: visible; /* Horizontal scrolling disabled for larger screens */
+        flex-wrap: wrap; /* Allow wrapping for larger screens */
+    }
+    .card1 {
+        flex: 1 1 calc(33.33% - 40px); /* Cards take up 1/3 of the width */
+    }
+
+    /* Adjust for the fourth card if needed */
+    .card1:nth-child(4) {
+        flex: 0 0 100%; /* Full width for the fourth card */
+    }
+}
+
+
+.carousel-slide li {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-slide li.active {
+    opacity: 1;
+    position: relative;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .carousel-slide li.prev,
+  .carousel-slide li.next {
+    opacity: 0;
+    z-index: 1;
+  }
+
+/* Steps Buttons */
+#step1, #step2, #step3, #step4, #step5 {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center text and icon horizontally */
+    justify-content: center; /* Center text and icon vertically */
+    margin: 10px; /* Combined margin for all sides */
+    padding: 10px;
+    background-color: #CAE1FE;
+    color: #1E2534;
+    border: transparent; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px; /* Ensure height matches width for a circular shape */
+    position: relative;
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+#step1 i, #step2 i, #step3 i, #step4 i, #step5 i {
+    font-size: 48px; /* Adjust size of the icon */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+#step1 span, #step2 span, #step3 span, #step4 span, #step5 span {
+    display: block; /* Ensure text is displayed on a new line */
+}
+
+#step1, #step2, #step3, #step4, #step5 {
+    position: relative; /* Positioning for the element */
+    padding: 10px; /* Adjust padding as needed */
+    border: 2px solid transparent; /* Default border */
+    border-radius: 50%; /* Make the border circular */
+    transition: border 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Ring effect for hover, active, and focus states */
+#step1:hover, #step1:focus, #step1:active,
+#step2:hover, #step2:focus, #step2:active,
+#step3:hover, #step3:focus, #step3:active,
+#step4:hover, #step4:focus, #step4:active,
+#step5:hover, #step5:focus, #step5:active {
+    border: 2px solid #CAE1FE; /* Circle color */
+    color: #F1EDED; /* Text color on hover */
+    background-color: transparent; /* No fill color */
+}
+
+/* Automatically apply styles to step1 on page load */
+#step1 {
+    border: 2px solid #CAE1FE; /* Circle color */
+    color: #1E2534; /* Text color */
+}
+
+
+/* Row containing buttons */
+.steps.row {
+    display: flex;
+    justify-content: space-around; /* Distribute buttons evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 50px;
+    width: 100%; /* Make sure the row takes full width */
+    gap: 20px; /* Space between buttons */
+}
+
+/* Container for the steps */
+.containerSteps {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+}
+
+/* Row containing buttons */
+.steps.row {
+    display: flex;
+    justify-content: space-around; /* Distribute buttons evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 50px;
+    width: 100%; /* Make sure the row takes full width */
+    gap: 20px; /* Space between buttons */
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#info-row {
+    margin-top: 20px; /* Adjust the margin as needed */
+    text-align: center; /* Center-align the text */
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400!important;
+    font-size: 24px;
+    font-style: normal;
+    color: #F1EDED;
+}
+
+.bold-heading {
+    margin-left: 20%;
+}
+
+.columnSteps {
+    padding-top: 50px;
+}
+
+.split-columns {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 100px; /* Adjust the gap between columns */
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.steps button.active {
+    background-color: #1E2534!important; /* Change background color of active button */
+    color: #F1EDED!important; /* Change text color of active button */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+}
+
+/* Testimonial Section */
+/* General card container styling */
+.card2-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping on small screens */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px; /* Adds space between the cards */
+    padding: 20px;
+    scroll-snap-type: x mandatory; /* Optional: Enables scroll snapping for a smoother experience */
+}
+
+/* Individual card styling */
+.card2 {
+    flex: 0 0 100%; /* Each card takes 90% of the container width in mobile */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    scroll-snap-align: start; /* Optional: Snap to start of each card during scroll */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Ensure elements stack vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center-align the text */
+}
+
+/* Centering the stars (icon) */
+.designation {
+    display: flex;
+    justify-content: center; /* Horizontally center the stars */
+    align-items: center; /* Vertically center the stars if needed */
+    margin: 10px 0; /* Add margin for spacing between stars and text */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .card2-container {
+        flex-wrap: wrap; /* Cards will wrap into rows on larger screens */
+        overflow-x: visible; /* Horizontal scrolling disabled for larger screens */
+    }
+    .card2 {
+        flex: 1 1 calc(33.33% - 40px); /* Cards take up 1/3 of the width */
+        align-items: flex-start; /* Align content to the left on larger screens */
+        text-align: left; /* Align text to the left on larger screens */
+    }
+    .designation {
+        justify-content: flex-start; /* Align stars to the left on larger screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Testimonial Section */
+.testimonial-cards {
+    padding-bottom: 50px; /* Adjusted for better spacing */
+}
+
+.row.align-items-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex; /* Ensure the row uses flexbox */
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    justify-content: center; /* Center content */
+}
+
+.testimonialsContent, .full-width-background, .button-section {
+    background-color: #1E2534 !important;
+}
+
+.title-testimonial {
+    justify-content: center;
+}
+
+.testimonial-card {
+    width: 100%; /* Set to 100% for mobile */
+    max-width: 300px; /* Maximum width for larger screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 20px; /* Vertical margin for spacing */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    background-color: #F1EDED;
+    color: #1E2534;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in height */
+}
+
+.testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex-grow: 1; /* Allow text area to expand if needed */
+    color: #1E2534;
+}
+
+.testimonial-icon {
+    font-size: 50px;
+    color: #495F7F;
+    margin-bottom: 15px;
+}
+
+.testimonial-details .name {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1E2534;
+}
+
+.testimonial-details .designation {
+    font-size: 0.9rem;
+    color: #1E2534;
+    margin-bottom: 15px;
+}
+
+.testimonial-details .designation i {
+    color: #FFD700; /* Star color */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .row {
+        padding: 0!important; /* Remove any padding from the row */
+    }
+
+    .row.align-items-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin: 10px 0; /* Remove horizontal margin to eliminate side spacing */
+        width: 100%; /* Ensure full width for mobile */
+    }
+
+    .testimonial-text {
+        font-size: 0.85rem; /* Slightly smaller text for mobile */
+    }
+
+    .testimonial-icon {
+        font-size: 40px; /* Smaller icon on mobile */
+    }
+
+    .testimonial-details .name {
+        font-size: 1.1rem; /* Slightly smaller name on mobile */
+    }
+
+    .testimonial-details .designation {
+        font-size: 0.85rem; /* Slightly smaller designation on mobile */
+    }
+
+    .testimonial-cards {
+        padding-bottom: 30px; /* Less padding for mobile */
+    }
+}
+
+
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 20px; /* Add padding for mobile */
+}
+
+h2 {
+    font-size: 1.5rem; /* Responsive header size */
+}
+
+p {
+    font-size: 0.9rem; /* Smaller paragraph font for mobile */
+}
+
+/* Form Adjustments */
+.contact-form .form-group {
+    margin-bottom: 15px; /* More space between form fields */
+}
+
+.contact-form label {
+    font-size: 0.9rem; /* Adjust label font size */
+}
+
+/* Button Styling */
+.button {
+    width: 100%; /* Full-width button on mobile */
+    padding: 12px; /* Increase padding for easier tapping */
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+    /* Adjustments for tablets and larger screens */
+    .navbar {
+        flex-direction: row; /* Horizontal layout for navbar */
+        justify-content: space-between; /* Space out elements */
+    }
+
+    .navbar-menu {
+        flex-direction: row; /* Horizontal menu items */
+    }
+
+    .contact-section {
+        padding: 40px; /* Increase padding for larger screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Larger header size */
+    }
+
+    p {
+        font-size: 1rem; /* Increase paragraph font size */
+    }
+
+    .button {
+        width: auto; /* Reset button width */
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    /* Adjustments for larger desktops */
+    h2 {
+        font-size: 2.5rem; /* Even larger header size */
+    }
+
+    p {
+        font-size: 1.1rem; /* Further increase paragraph font size */
+    }
+}
+
+
+
+
+
+/* General mobile styles */
+@media (max-width: 767px) {
+    /* Header and Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar-menu li {
+        margin: 5px 0;
+    }
+
+    .navbar-menu .nav-link {
+        padding: 10px;
+    }
+}
+
+
+/* Media Query to Hide Chevron Down Icon on Mobile Devices */
+@media (max-width: 767px) {
+    .scroll-down {
+        display: none;
+    }
+}
+
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px; /* Space between brand and contact info */
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1E2534; /* Background color for dropdown menu */
+        color: #fff;
+        z-index: 999;
+        overflow: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 60px; /* Space for toggle */
+    }
+
+    .dropdown-menu a {
+        display: block;
+        color: #fff;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #495F7F;
+    }
+
+    .navbar-toggle .fa-bars {
+        display: block; /* Display hamburger icon by default */
+    }
+
+    .navbar-toggle .fa-times {
+        display: none; /* Hide close icon by default */
+    }
+
+    .navbar-toggle.active .fa-bars {
+        display: none; /* Hide hamburger icon when menu is open */
+    }
+
+    .navbar-toggle.active .fa-times {
+        display: block; /* Show close icon when menu is open */
+    }
+
+    .dropdown-menu.show {
+        display: flex; /* Show dropdown menu when active */
+    }
+}
+
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px!important; /* Smaller header size on mobile */
+    }
+}
+@media (max-width: 768px) { /* Adjust the width as needed for mobile */
+    h2, h3, h4 { /* Target the section titles */
+        text-align: center; /* Center the section titles on mobile */
+        margin: 0; /* Optional: Adjust margin if needed */
+    }
+}
+
+/* Adjust the hero content container */
+.hero-content {
+    max-width: 800px; /* Set a max width to limit how wide it can get */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding for breathing room */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 90%; /* Make it wider on mobile */
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .hero h1 {
+        font-size: 24px; /* Adjust the size as needed */
+    }
+
+    .hero p1 {
+        font-size: 14px; /* Adjust the size as needed */
+        line-height: 1.5; /* Ensure proper line spacing */
+        word-wrap: break-word; /* Allow long words to wrap */
+    }
+
+    .hero {
+        padding: 20px; /* Add padding for better spacing */
+    }
+}
+
+
+
+
+
+
