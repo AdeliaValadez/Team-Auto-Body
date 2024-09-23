@@ -207,18 +207,15 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 50vh!important; /* Full viewport height */
-    background: url('../images/aboutHero.png') no-repeat center center; /* Ensure image covers section */
-    background-size: cover; /* Ensure image covers entire hero section */
+    height: 50vh; /* Set height for larger screens */
+    background: url('../images/aboutHero.png') no-repeat center center;
+    background-size: cover; /* Cover for larger screens */
     display: flex;
     align-items: center;
     justify-content: center;
     color: #F1EDED;
 }
 
-.heroSub {
-    text-align: left;
-}
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -244,20 +241,24 @@ body {
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 100vh; /* Adjust height to 75% of viewport height */
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F1EDED;
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Allow height to adjust based on content */
+        background-size: contain; /* Contain to ensure the whole image is visible */
+        background-repeat: no-repeat; /* Prevent repeating the image */
+        background-position: center; /* Center the image */
+    }
+
+    .hero-content h1 {
+        font-size: 36px; /* Adjust font size for mobile */
+    }
 }
 
 
 /* Overview Section */
 .business-overview {
+    padding-top: 50px;
     margin-bottom: 40px;
     margin-left: 5%;
     margin-right: 5%;
@@ -403,6 +404,9 @@ body {
 
   p {
       font-size: 1.1rem; /* Further increase paragraph font size */
+  }
+  .container {
+    padding-top: 50px;
   }
 }
 
@@ -557,6 +561,12 @@ body {
       text-align: center; /* Center the section titles on mobile */
       margin: 0; /* Optional: Adjust margin if needed */
   }
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 18px!important;
+      }
 }
 
 /* Media Queries for Mobile Devices */
