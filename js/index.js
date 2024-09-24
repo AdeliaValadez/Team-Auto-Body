@@ -87,14 +87,18 @@ $(document).ready(function() {
             $(".steps button").each(function() {
                 var stepId = $(this).attr("id");
                 var description = descriptions[stepId];
-                $(this).after('<div class="step-description">' + description + '</div>'); // Insert description below button
+                if ($(this).next('.step-description').length === 0) {
+                    $(this).after('<div class="step-description">' + description + '</div>'); // Insert description below button if not already inserted
+                }
             });
             $(".steps button").removeClass("active"); // Ensure no button is active
             $(".steps").addClass("disable-buttons-mobile"); // Disable buttons on mobile
+            $("#info-row").hide(); // Hide the info row on mobile
         } else {
-            // For larger screens: Clear the mobile layout
+            // For larger screens: Clear the mobile layout, enable buttons
             $(".step-description").remove(); // Remove the descriptions below each button
             $(".steps").removeClass("disable-buttons-mobile"); // Enable buttons for larger screens
+            $("#info-row").html(descriptions["step1"]).show(); // Show the first step's description
             $("#step1").addClass("active"); // Set "Free Estimates" button as active
         }
     }
@@ -102,10 +106,28 @@ $(document).ready(function() {
     // Initialize buttons when page loads
     initializeButtons();
 
+    // Add click event for each button on larger screens
+    $(".steps button").click(function() {
+        if ($(window).width() > 767) {  // Only allow interaction on larger screens
+            // Remove 'active' class from all buttons
+            $(".steps button").removeClass("active");
+
+            // Add the 'active' class to the clicked button
+            $(this).addClass("active");
+
+            // Get the corresponding description
+            var stepId = $(this).attr("id");
+            var description = descriptions[stepId];
+
+            // Display the description in the 'info-row' div below all the buttons
+            $("#info-row").html(description).show();
+        }
+    });
+
     // Handle window resizing for mobile and desktop layouts
     function updateLayout() {
         if ($(window).width() <= 767) {
-            // Mobile: Insert descriptions and disable buttons
+            // Mobile: Insert descriptions below each button and disable button interaction
             if ($(".step-description").length === 0) { // Prevent multiple insertions
                 $(".steps button").each(function() {
                     var stepId = $(this).attr("id");
@@ -115,10 +137,13 @@ $(document).ready(function() {
             }
             $(".steps button").removeClass("active");
             $(".steps").addClass("disable-buttons-mobile"); // Disable buttons on mobile
+            $("#info-row").hide(); // Hide the info row for mobile view
         } else {
-            // Larger screens: Clear descriptions and enable buttons
-            $(".step-description").remove(); // Remove descriptions
+            // Larger screens: Clear descriptions and enable button interaction
+            $(".step-description").remove(); // Remove mobile-specific descriptions
             $(".steps").removeClass("disable-buttons-mobile"); // Enable buttons
+            $("#info-row").html(descriptions["step1"]).show(); // Show the description for the first step
+            $(".steps button").removeClass("active");
             $("#step1").addClass("active"); // Activate step 1 by default
         }
     }
