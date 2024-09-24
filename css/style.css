@@ -14,7 +14,8 @@ h1 {
 h3 {
     color: #F1EDED;
     size: 36px;
-    font-family: "poppins", san-serif; }
+    font-family: "poppins", san-serif; 
+}
 
 p2 {
     color: #1E2534;
@@ -128,6 +129,11 @@ body {
 
 
 /* footer section */
+.certified-logo {
+    width: 100px; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    margin: 10px 0; /* Adds some spacing */
+}
 .footer_section {
     background-color: #1E2534;
     padding: 20px 0; /* Keep padding */
@@ -427,6 +433,7 @@ body {
     background-color: #1E2534;
     color: #fff;
     padding: 50px 5%;
+    margin: 0px;
 }
 
 .OurServices h2 {
@@ -692,6 +699,21 @@ body {
 }
 
 /* Testimonial Section */
+@media (max-width: 768px) { /* Adjust this breakpoint as needed */
+    .testimonial-cards .row {
+        margin-bottom: 10px; /* Reduce the bottom margin for mobile */
+    }
+
+    .section-title {
+        margin-bottom: 5px; /* Reduce the margin below the title */
+        margin-left: 5%;
+        margin-right: 5%
+    }
+
+    .button-section {
+        margin-top: 0; /* Adjust if necessary */
+    }
+}
 /* General card container styling */
 .card2-container {
     display: flex;
@@ -948,7 +970,11 @@ p {
 
 
 
-
+@media (max-width: 767px) {
+    .contact-info p2 {
+        margin: 10px;
+    }
+}
 
 /* General mobile styles */
 @media (max-width: 767px) {
@@ -956,7 +982,7 @@ p {
     .navbar {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .navbar-brand {

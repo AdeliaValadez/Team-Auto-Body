@@ -20,6 +20,7 @@
   font-size: 1.5em;
   margin-right: 20px; /* Space between brand name and contact info */
 }
+
 .contact-info {
   font-size: 0.9rem;
   color: #F1EDED;
@@ -313,7 +314,7 @@ body {
   .navbar {
       flex-direction: column;
       align-items: center;
-      text-align: center;
+      text-align: left;
   }
 
   .navbar-brand {
@@ -340,6 +341,11 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+    .contact-info p2 {
+        margin: 10px;
+    }
+}
 
 /* Media Query to Hide Chevron Down Icon on Mobile Devices */
 @media (max-width: 767px) {
@@ -488,6 +494,11 @@ body {
 
 
 /* footer section */
+.certified-logo {
+    width: 100px; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    margin: 10px 0; /* Adds some spacing */
+}
 .footer_section {
   background-color: #1E2534;
   padding: 20px 0; /* Keep padding */

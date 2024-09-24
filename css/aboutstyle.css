@@ -87,6 +87,11 @@ body {
 
 
 /* footer section */
+.certified-logo {
+    width: 100px; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    margin: 10px 0; /* Adds some spacing */
+}
 .footer_section {
   background-color: #1E2534;
   padding: 20px 0; /* Keep padding */
@@ -171,6 +176,13 @@ body {
     margin: 0; /* Adjust margin as needed */
     color: #F1EDED; /* Adjust text color */
 }
+
+@media (max-width: 767px) {
+    .contact-info p2 {
+        margin: 10px;
+    }
+}
+  
 
 .navbar-menu {
     list-style: none;
@@ -438,8 +450,8 @@ body {
   /* Header and Navbar */
   .navbar {
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: left;
+      text-align: left;
   }
 
   .navbar-brand {
@@ -453,7 +465,7 @@ body {
   .navbar-menu {
       display: none;
       flex-direction: column;
-      align-items: center;
+      align-items: left;
       padding: 0;
   }
 
@@ -484,7 +496,7 @@ body {
   .navbar-brand {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: left;
       margin-bottom: 20px; /* Space between brand and contact info */
   }
 
@@ -575,15 +587,6 @@ body {
       order: 1; /* Move the button section below the cards */
       text-align: center; /* Center the button if needed */
       margin-top: 20px; /* Add some space above the button */
-  }
-
-  .testimonial-card {
-      margin: 10px 0; /* Reduce margins for mobile */
-  }
-  
-  .testimonialsSection .row {
-      flex-direction: row; /* Stack testimonial cards vertically */
-      justify-content: center;
   }
 }
 
