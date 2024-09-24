@@ -707,7 +707,8 @@ body {
     .section-title {
         margin-bottom: 5px; /* Reduce the margin below the title */
         margin-left: 5%;
-        margin-right: 5%
+        margin-right: 5%;
+        justify-content: center;
     }
 
     .button-section {
@@ -896,7 +897,6 @@ body {
 }
 
 
-
 /* Contact Section Styles */
 .contact-section {
     padding: 20px; /* Add padding for mobile */
@@ -924,7 +924,14 @@ p {
     width: 100%; /* Full-width button on mobile */
     padding: 12px; /* Increase padding for easier tapping */
 }
-
+.button1 {
+    width: 100%; /* Full-width button on mobile */
+}
+.button1-section {
+    margin: 5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /* Media Queries */
 @media (min-width: 768px) {
