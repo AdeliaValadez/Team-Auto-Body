@@ -278,6 +278,7 @@ body {
     display: flex;
     align-items: center; /* Align items vertically in the center */
     color: #F1EDED;
+    margin: 5px!important;
 }
 
 .brand-name {

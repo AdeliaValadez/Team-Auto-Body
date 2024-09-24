@@ -445,12 +445,12 @@ body {
 
   .contact-section h2 {
       font-size: 24px; /* Smaller header size */
-      text-align: center; /* Center the header */
+      text-align: left; /* Center the header */
   }
 
   .contact-section p {
       font-size: 16px; /* Adjust paragraph font size */
-      text-align: center; /* Center text for better readability */
+      text-align: left; /* Center text for better readability */
       word-wrap: break-word; /* Ensure long text wraps properly */
   }
 
