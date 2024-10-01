@@ -388,6 +388,11 @@ body {
         overflow: hidden; /* Prevent scrolling */
     }
     
+    /* Optional: If you want to limit the total height of links */
+.dropdown-menu .nav-link {
+    flex: 0.1; /* Allow each link to grow and fill the space equally */
+}
+
     .dropdown-menu .nav-link {
         font-size: 1.5rem; /* Increase font size for better clickability */
         padding: 12px 20px; /* Add padding for a larger clickable area */
