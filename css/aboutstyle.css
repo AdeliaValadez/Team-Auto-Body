@@ -210,7 +210,40 @@ body {
     border-bottom: 2px solid #CAE1FE; /* Persistent underline for active link */
 }
 
+@media (max-width: 768px) {
+    /* Dropdown styles here */
+    .dropdown-menu {
+        display: none; /* Initially hidden */
+        position: fixed; /* Fix it to the viewport */
+        top: 0; /* Start from the top of the screen */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background-color: #1E2534; /* Match the navbar background */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+        z-index: 1000; /* Ensure it appears above other elements */
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 20px 0; /* Add padding for top and bottom */
+        overflow: hidden; /* Prevent scrolling */
+    }
+    
+    /* Optional: If you want to limit the total height of links */
+.dropdown-menu .nav-link {
+    flex: 0.1; /* Allow each link to grow and fill the space equally */
+}
 
+    .dropdown-menu .nav-link {
+        font-size: 1.5rem; /* Increase font size for better clickability */
+        padding: 12px 20px; /* Add padding for a larger clickable area */
+        color: #F1EDED; /* Text color */
+        text-align: center; /* Center text */
+        width: 100%; /* Make buttons full width for easy clicking */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+}
 
 
 
