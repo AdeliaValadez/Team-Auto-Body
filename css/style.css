@@ -1,3 +1,30 @@
+.navbar-contact {
+    display: none; /* Hide by default */
+}
+
+/* Show the contact buttons only on mobile screens */
+@media (max-width: 768px) {
+    .navbar-contact {
+        display: flex; /* Show buttons in mobile view */
+        margin-top: 10px; /* Adjust spacing above */
+        margin-bottom: 10px; /* Space below the buttons */
+        gap: 10px; /* Space between buttons */
+    }
+}
+
+.nav-button {
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+    background-color: #007BFF; /* Example button color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.nav-button i {
+    margin-right: 5px; /* Space between icon and text */
+}
 /** Fonts **/
 h1 { 
     font-size: 64px;
