@@ -368,7 +368,32 @@ body {
     }
 }
 
-
+@media (max-width: 768px) {
+    /* Dropdown styles here */
+    .dropdown-menu {
+        display: none; /* Initially hidden */
+        position: absolute; /* Position it absolutely to control placement */
+        top: 60px; /* Adjust this value to move it higher or lower */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust to perfectly center */
+        background-color: #1E2534; /* Match the navbar background */
+        border-radius: 4px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+        z-index: 1000; /* Ensure it appears above other elements */
+        padding: 10px 0; /* Add vertical padding */
+    }
+    
+    .dropdown-menu .nav-link {
+        font-size: 1.2rem; /* Increase font size for better clickability */
+        padding: 12px 20px; /* Add padding for a larger clickable area */
+        color: #F1EDED; /* Text color */
+        text-align: center; /* Center text */
+    }
+    
+    .dropdown-menu .nav-link:hover {
+        background-color: rgba(202, 225, 254, 0.2); /* Light background color on hover */
+    }
+}
 
 
 
